@@ -45,49 +45,40 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ex eum explicabo molestias magni consequatur rerum animi earum repellat aspernatur, iure, vel eos a vitae libero quisquam eligendi mollitia quibusdam, doloribus ullam. Aut aliquid beatae hic assumenda explicabo quae eius.</p>
             </article>
         </section>
-        <section>
-            <h2></h2>
+        <section> 
+            <h2>Heading</h2>           
             <article>
-                <h3></h3>
-                <img src="" alt="">
-                <p></p>
-            </article>
-            <article>
-                <form action="">
-                    <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">Your name</label>
-                        <div class="fcf-input-group">
-                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                        </div>
-                    </div>
-            
-                    <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">Your email address</label>
-                        <div class="fcf-input-group">
-                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                        </div>
-                    </div>
-            
-                    <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Your message</label>
-                        <div class="fcf-input-group">
-                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                        </div>
-                    </div>
-            
-                    <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                    </div>
-            
-                    <div class="fcf-credit" id="fcf-credit">
-                    Simple HTML email form provided by <a href="#" target="_blank">BoraTech</a>
-                    </div>
-                </form>
+                <h3>Contact Form</h3>
+                <div class="container">
+                    <form action="contactform">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Austria">Austria</option>
+                        </select>
+
+                        <input type="submit" value="submit">
+
+                    </form>
+                </div>
             </article>
         </section>
     </main>
     <footer>
         <section>
+            <h3>Our Social Media Links</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
             <p>&copy; <em id="date"></em>Created by Enes Bora</p>
         </section>
     </footer>
