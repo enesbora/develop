@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
 
 h1 {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 p {
-    font-family: 'Yanone Kaffeesatz', serif;
-    font-size: 2rem;
+  font-family: "Yanone Kaffeesatz", serif;
+  font-size: 2rem;
 }
 
 #monospace {
-    font-family: 'Pathway Gothic One', monospace;
-    font-size: 3rem;
+  font-family: "Pathway Gothic One", monospace;
+  font-size: 3rem;
 }
