@@ -1,16 +1,18 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+
+h1 {
     font-family: 'Lato', sans-serif;
-    background: lightblue url(https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=) no-repeat fixed center;
 }
-.one {
-    font-size: 16px;
+
+p {
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-size: 2rem;
 }
-.two {
-    font-size: 64px;
-}
-.rem {
+
+#monospace {
+    font-family: 'Pathway Gothic One', monospace;
     font-size: 3rem;
-}
-.em {
-    font-size: 3em;
 }
