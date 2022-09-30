@@ -1,0 +1,27 @@
+.flex-container {
+    background-color: black;
+    display: flex;
+    border: 3px solid #f00;
+}
+.item {
+  font-size: 36px;
+  padding: 20px;
+}
+.bir {
+  background-color: blue;
+}
+.iki {
+  background-color: magenta;
+}
+.uc {
+  background-color: red;
+}
+.dort {
+  background-color: yellow;
+}
+.bes {
+  background-color: purple;
+}
+.alti {
+  background-color: pink;
+}
