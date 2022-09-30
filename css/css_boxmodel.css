@@ -10,3 +10,9 @@ body {
 nav {
     background-color: red;
 }
+nav ul li {
+    display: inline-block;
+}
+section {
+    background-color: aquamarine;
+}
