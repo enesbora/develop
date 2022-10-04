@@ -13,6 +13,8 @@ html {
   border: 5px solid rgb(86, 98, 110);
   border-radius: 5px;
   margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section {
@@ -21,11 +23,6 @@ section {
   padding: 10px;
   color: #fff;
   font-weight: bold;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .item {
