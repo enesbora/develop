@@ -1,0 +1,36 @@
+/* use display:grid for layout and positioning */
+/* grid container */
+ul {
+    display: grid;
+    /* define the number of columns */
+    grid-template-columns: 1fr;
+  }
+  
+  /* grid items */
+  li {
+    margin: 3.3rem;
+  }
+  
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+    ul {
+      /* define the number of columns */
+      grid-template-columns: 1fr 1fr;
+      /* define the number of rows */
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  
+  /*
+  grid alternative
+  
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(36.6rem, 1fr));
+  }
+  */
