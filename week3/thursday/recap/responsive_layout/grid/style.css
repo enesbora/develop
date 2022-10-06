@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+section {
+  grid-template-columns: 1fr;
+  min-height: 300px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  grid-template-columns: 1fr;
+  min-height: 300px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+article:first-child {
+  background-color: deepskyblue;
+}
+
+article:nth-child(2) {
+  background-color: gold;
+}
+
+article:nth-child(3) {
+  background-color: crimson;
+}
+
+article:nth-child(4) {
+  background-color: violet;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+  }
+
+  section:first-child {
+    order: 1;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .signup {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+}
