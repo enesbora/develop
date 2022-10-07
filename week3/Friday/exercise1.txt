@@ -1,0 +1,13 @@
+1. Say hello
+Create a program that prompts for your name and prints a greeting using your name.
+
+Initialize userName to null
+Initialize greet to “Hello”
+
+
+Prompt for name with “What is your name”
+Validate the user input. If valid, assign the input to the userName
+Assign personalGreet to greet + userName
+
+Display personalGreet
+End

@@ -1,0 +1,15 @@
+3. Printing quotes
+Create a program that prompts for a quote and an author. Display the quotation and author as shown here:
+[Author] says, "[Quote]" (Replace [Author] and [Quote] with the actual values.
+
+Initialize authorInput to null
+Initialize quoteInput to null
+
+Prompt for authorInput with “Please write your favorite author”
+Validate the user input, if the input is valid assign the user input to the authorInput. Else Else, prompt “Please write a valid text”.
+
+Prompt for quoteInput with “Please write a quote from” + authorInput.
+Validate the user input, if the input is valid, assign the user input to the quoteInput.Else Else, prompt “Please write a valid text”.
+
+Display; authorInput + “says, “ + “quoteInput”
+End

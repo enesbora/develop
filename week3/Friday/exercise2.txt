@@ -1,0 +1,13 @@
+2. Counting the number of characters
+Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contains.
+
+Initialize  text to null
+Initialize the textLength to 0
+
+Prompt “Please write down a script and then I calculate the character count”
+Validate the user input. If valid, assign the text to text variable and take the white spaces out. Else, prompt “Please write a valid text”.
+
+Count the number of characters in the text and assign it to textLength.
+
+Display “Your text is” + text + “and your text has” + textLength + “characters”
+
