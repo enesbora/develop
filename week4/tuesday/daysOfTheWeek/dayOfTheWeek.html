@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate Days of the Week</title>
+  </head>
+  <body>
+    <script>
+      let inputDay = prompt(
+        "Please enter a day to see its German translation.."
+      );
+
+      switch (inputDay) {
+        case "sunday":
+          document.write(`The german translation of ${inputDay} is Sonntag`);
+          break;
+        case "sonday":
+          document.write(`The german translation of ${inputDay} is Montag`);
+          break;
+        case "tuesday":
+          document.write(`The german translation of ${inputDay} is Dienstag`);
+          break;
+        case "wendsday":
+          document.write(`The german translation of ${inputDay} is Mittwoch`);
+          break;
+        case "thursday":
+          document.write(`The german translation of ${inputDay} is Donnerstag`);
+          break;
+        case "friday":
+          document.write(`The german translation of ${inputDay} is Freitag`);
+          break;
+        case "saturday":
+          document.write(`The german translation of ${inputDay} is Samstag`);
+          break;
+
+        default:
+        document.write(`There is no such day`);
+          break;
+      }
+    </script>
+  </body>
+</html>
