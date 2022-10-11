@@ -12,16 +12,14 @@
         "Please type a number between 0 and 9 to see the multiplication with 9"
       );
       let result = parseInt(inputNumber) * 9;
-      if (inputNumber < 9 && inputNumber > 0) {
-        console.log(result);
-      } else if (isNaN(inputNumber)) {
+      if (isNaN(inputNumber)) {
         window.alert(
           `${inputNumber} is not a number. Please write a number between 0 and 9`
         );
+      } else if (inputNumber < 9 && inputNumber > 0) {
+        console.log(result);
       } else if (inputNumber > 9 || inputNumber < 0) {
-        window.alert(
-          `${inputNumber} is not between 0 and 9`
-        );
+        window.alert(`${inputNumber} is not between 0 and 9`);
       }
     </script>
   </body>
