@@ -12,7 +12,7 @@
         "Please enter a day to see its German translation.."
       );
 
-      switch (inputDay) {
+      switch (inputDay.toLowerCase) {
         case "sunday":
           document.write(`The german translation of ${inputDay} is Sonntag`);
           break;
@@ -36,7 +36,7 @@
           break;
 
         default:
-        document.write(`There is no such day`);
+        document.write(`There is no such day called ${inputDay} or you wrote it false`);
           break;
       }
     </script>
