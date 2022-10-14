@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Class</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const studentList = [
+        {
+          name: "Hasan",
+          surname: "Danaci",
+          age: 41,
+          eye: "green",
+          hobby: "ice skating",
+          picture: "./pictures/hasan.jpg",
+        },
+
+        {
+          name: "Enes",
+          surname: "BORA",
+          age: 38,
+          eye: "green",
+          hobby: "photography",
+          picture: "./pictures/Enes.jpg",
+        },
+        {
+          name: "Ozzy",
+          surname: "the star",
+          age: 37,
+          eye: "green",
+          hobby: "playing guitar",
+          picture: "./pictures/Ozzy.jpg",
+        },
+        {
+          name: "Ali",
+          surname: "Danaci",
+          age: 41,
+          eye: "green",
+          hobby: "ice skating",
+          picture: "./pictures/hasan.jpg",
+        },
+        {
+          name: "Hasan",
+          surname: "Danaci",
+          age: 41,
+          eye: "green",
+          hobby: "ice skating",
+          picture: "./pictures/hasan.jpg",
+        },
+        {
+          name: "İsmet",
+          surname: "Bakay",
+          age: 41,
+          eye: "green",
+          hobby: "ice skating",
+          picture: "./pictures/ismetbakay.jpg",
+        },
+      ];
+      let container = document.getElementById("container");
+      let str = "";
+      str += "<ul>";
+      for (let i = 0; i < studentList.length; i++) {
+        let person = people[i];
+        str += `<li>${person.name} age:${person.age}</li>`;
+      }
+
+      str += "</ul>";
+      container.innerHTML = str;
+    </script>
+  </body>
+</html>
