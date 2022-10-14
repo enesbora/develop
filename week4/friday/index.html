@@ -244,7 +244,7 @@
       str += "<ul>";
       for (let i = 0; i < studentList.length; i++) {
         let person = studentList[i];
-        str += `<li onclick="cardClicked(this)" onmouseout="cardLeaved(this)">
+        str += `<li onmouseover="cardClicked(this)" onmouseout="cardLeaved(this)">
             <img src="${person.picture}" alt="" srcset=""><br>
             ${person.name} <br>
             age:${person.age}
