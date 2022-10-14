@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Class</title>
+    <style>
+        img {
+            width: 100px;
+        }
+    </style>
   </head>
   <body>
     <div id="container"></div>
@@ -17,7 +22,7 @@
           age: 41,
           eye: "green",
           hobby: "ice skating",
-          picture: "./pictures/hasan.jpg",
+          picture: "../thursday/classroom_html_css/images/hasan.jpeg",
         },
 
         {
@@ -26,7 +31,7 @@
           age: 38,
           eye: "green",
           hobby: "photography",
-          picture: "./pictures/Enes.jpg",
+          picture: "../thursday/classroom_html_css/images/enes.jpeg",
         },
         {
           name: "Ozzy",
@@ -34,15 +39,15 @@
           age: 37,
           eye: "green",
           hobby: "playing guitar",
-          picture: "./pictures/Ozzy.jpg",
+          picture: "../thursday/classroom_html_css/images/ozzy.jpeg",
         },
         {
           name: "Ali",
-          surname: "Danaci",
+          surname: "Göcmen",
           age: 41,
           eye: "green",
           hobby: "ice skating",
-          picture: "./pictures/hasan.jpg",
+          picture: "../thursday/classroom_html_css/images/ali.jpeg",
         },
         {
           name: "Hasan",
@@ -50,7 +55,7 @@
           age: 41,
           eye: "green",
           hobby: "ice skating",
-          picture: "./pictures/hasan.jpg",
+          picture: "../thursday/classroom_html_css/images/hasan.jpeg",
         },
         {
           name: "İsmet",
@@ -58,15 +63,19 @@
           age: 41,
           eye: "green",
           hobby: "ice skating",
-          picture: "./pictures/ismetbakay.jpg",
+          picture: "../thursday/classroom_html_css/images/ismet.jpeg",
         },
       ];
       let container = document.getElementById("container");
       let str = "";
       str += "<ul>";
       for (let i = 0; i < studentList.length; i++) {
-        let person = people[i];
-        str += `<li>${person.name} age:${person.age}</li>`;
+        let person = studentList[i];
+        str += `<li>
+            <img src="${person.picture}" alt="" srcset="">
+            ${person.name} 
+            age:${person.age}
+               </li>`;
       }
 
       str += "</ul>";
