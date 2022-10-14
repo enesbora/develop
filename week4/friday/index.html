@@ -22,6 +22,21 @@
         margin: 10px;
         box-shadow: 2px 2px 4px gray;
         cursor: pointer;
+        position: relative;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+      }
+      .bg-img img {
+        z-index: 2;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        transform: scale(1.5);
       }
     </style>
   </head>
@@ -216,12 +231,20 @@
           picture: "../thursday/classroom_html_css/images/Yusuf.jpg",
         },
       ];
+
+      function cardClicked(element) {
+        element.classList.add("bg-img");
+      }
+      function cardLeaved(element) {
+        element.classList.remove("bg-img");
+      }
+
       let container = document.getElementById("container");
       let str = "";
       str += "<ul>";
       for (let i = 0; i < studentList.length; i++) {
         let person = studentList[i];
-        str += `<li>
+        str += `<li onclick="cardClicked(this)" onmouseout="cardLeaved(this)">
             <img src="${person.picture}" alt="" srcset=""><br>
             ${person.name} <br>
             age:${person.age}
@@ -230,6 +253,10 @@
 
       str += "</ul>";
       container.innerHTML = str;
+
+      // document.addEventListener("click", function handleClick(event) {
+      //   event.target.classList.add("bg-img");
+      // });
     </script>
   </body>
 </html>
