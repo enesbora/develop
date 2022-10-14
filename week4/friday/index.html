@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Class</title>
     <style>
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        li{
+            text-align: center;
+        }
         img {
-            width: 100px;
+            width: 200px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px gray;
         }
     </style>
   </head>
@@ -72,8 +83,8 @@
       for (let i = 0; i < studentList.length; i++) {
         let person = studentList[i];
         str += `<li>
-            <img src="${person.picture}" alt="" srcset="">
-            ${person.name} 
+            <img src="${person.picture}" alt="" srcset=""><br>
+            ${person.name} <br>
             age:${person.age}
                </li>`;
       }
