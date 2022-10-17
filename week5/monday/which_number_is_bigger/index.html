@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Which number is bigger</title>
+  </head>
+  <body>
+    <h1>Calculate the bigger one</h1>
+
+<div id="container">
+    <div class="Num">
+    <form>
+<label class="label1">Enter Value 1:</label>
+<input type="text" name="first_num" value=" " />
+<label class="label1">Enter Value 2:</label>
+<input type="text" name="last_num" value=" " />
+<br/>
+<input type="button" value=" Calculate " onclick="biggerNum();" />
+</form>
+    <script>
+      function biggerNum() {
+  var value1;
+  var value2;
+  value1 = document.first_num.value;
+  value2 = document.last_num.value;
+  if (value1 > value2) {
+    alert(`${value1} is greater than ${value2}`);
+  }else if (value2 > value1) {
+    alert(`${value2} is greater than ${value1}`);
+  }else (`${value1} is equal to ${value2}`)
+}
+    </script>
+  </body>
+</html>
