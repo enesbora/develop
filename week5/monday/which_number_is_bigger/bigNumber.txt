@@ -1,0 +1,12 @@
+Which number is bigger?
+- Declare 2 variables, both numbers
+- Compare which number is greater
+- Log the output, e.g. "The greater number of 5 and 10 is 10."
+- Add an output for the else statement, e.g. "The smaller number of 5 and 10 is 5."
+
+Pseudo Code
+1. take 2 numbers from the user
+2. check if they are numbers or not
+3. if not ask for correction
+4. compare the numbers
+5. write an output message

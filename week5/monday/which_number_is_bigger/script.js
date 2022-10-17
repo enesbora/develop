@@ -1,10 +1,19 @@
-function greaterNum() {
-  let value1;
-  let value2;
-  value1 = document.First_num.value;
-  value2 = document.last_num.value;
-  if (value1 > value2) {
-    alert("Value 1 is greater than value 2");
-    document.body.style.background = "orange";
+document.getElementById("btn").addEventListener("click", btnOnclick);
+
+function btnOnclick(){
+  var num1 = parseInt(document.getElementById("num1").value);
+  var num2 = parseInt(document.getElementById("num2").value);
+
+  if(isNaN(num1) || num1.length || isNaN(num1)){
+      alert("Please write only numbers");
+      return;
   }
+
+  let msg = document.getElementById("output");
+  if(num1 > num2)
+      msg.innerHTML = `The greater number of ${num1} and ${num2} is ${num1}.`;
+  else if(num1 < num2)
+      msg.innerHTML = `The greater number of ${num1} and ${num2} is ${num2}.`;
+  else
+      msg.innerHTML = "Numbers are equal.";
 }
