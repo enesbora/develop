@@ -29,3 +29,13 @@ let topics = t1.concat(t2);
 let t3 = ["python", "R", "Java"];
 topics = topics.concat(t3);
 console.log(topics);
+
+topics.push("C++");
+console.log(topics);
+topics.pop();
+console.log(topics);
+
+console.log(topics.shift());
+console.log(topics);
+topics.sort();
+console.log(topics);
