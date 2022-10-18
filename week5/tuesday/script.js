@@ -21,3 +21,11 @@ function Car(brand, model, year, color) {
 let glc = new Car("Mercedes", "GLC", 2020, "white");
 let levante = new Car("Masserati", "Levante", 2021, "purple");
 let defender = new Car("Land Rover", "Defender", 2014, "black");
+
+let t1 = ["HTML", "CSS"];
+let t2 = ["JS", "PHP"];
+let topics = t1.concat(t2);
+
+let t3 = ["python", "R", "Java"];
+topics = topics.concat(t3);
+console.log(topics);
