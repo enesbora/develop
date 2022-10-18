@@ -1,0 +1,8 @@
+To-Do List
+- Create a form input to write the tasks
+- Create an add button to add the written task to the list
+- Create an unordered list in HTML
+- Create a "close" button and append it to each list item
+- Add a "checked" symbol when clicking on a list item
+- Create a new list item when clicking on the "Add" button
+- Add a button to each task for being anle to delete 
