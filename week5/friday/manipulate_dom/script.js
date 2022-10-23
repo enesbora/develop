@@ -4,6 +4,8 @@ let anchor = document.getElementById("anchor");
 let aContent = "Anchor content";
 let prgrphContent = "Paragraph content";
 let headerContent = "content";
+//let section = document.getElementsByTagName('section');
+
 
 function addHeaderContent() {
   for (let i = 0; i < 2; i++) {
