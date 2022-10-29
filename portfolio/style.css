@@ -1,159 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Resetting browser settings */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
-    padding: 80px;
+  padding: 80px;
 }
 
 .banner {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    background: url(./images/myPic2.png);
-    background-size: cover;
-    background-position: right center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  background: url(./images/myPic2.png);
+  background-size: cover;
+  background-position: right center;
 }
 .banner h2 {
-    font-size: 2.5em;
-    color: #444;
-    font-weight: 300;
-    line-height: 1.5em;
+  font-size: 2.5em;
+  color: #444;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 .banner h2 span {
-    font-size: 1.2em;
-    color: #efefef;
+  font-size: 1.2em;
+  color: #efefef;
 }
 .banner h3 {
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
 }
-.btn{
-    position:relative;
-    background:#009e66;
-    display:inline-block;
-    color:#000;
-    margin-top: 20px;
-    padding:10px 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    border-radius: 3px;
+.btn {
+  position: relative;
+  background: #009e66;
+  display: inline-block;
+  color: #000;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 3px;
 }
 
 /*About me styles*/
 .heading {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .heading p {
-    font-style: italic;
-    font-size: 14px;
+  font-style: italic;
+  font-size: 14px;
 }
 .heading h2 {
-    color: #009e66;
-    font-size: 3em;
+  color: #009e66;
+  font-size: 3em;
 }
 .content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .contentBx {
-    padding: 40px;
-    text-align: justify;
+  padding: 40px;
+  text-align: justify;
 }
 .proPic {
-    width: 300px;
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+  width: 300px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .contentBx h2 {
-    font-weight: 300;
-    margin-bottom: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
-.heading.bottom{
-    display:flex;
-    justify-content: space-between;
-    flex-direction:row;
-    align-items: center;
+.heading.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
-.btn.round{
-    border-radius:50px;    ;
-    -webkit-border-radius:50px    ;
-    -moz-border-radius:50px    ;
-    -ms-border-radius:50px    ;
-    -o-border-radius:50px    ;
- }
+.btn.round {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
 .bt {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 w50 {
-    min-width: 25%;
+  min-width: 25%;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* Navbar style */
 nav {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition:0.5s;
-    -webkit-transition:0.5s;
-    -moz-transition:0.5s;
-    -ms-transition:0.5s;
-    -o-transition:0.5s;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 nav .logo {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 nav ul {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
-nav ul li{
-    list-style-type: none;
-    position: relative;
+nav ul li {
+  list-style-type: none;
+  position: relative;
 }
-nav ul li a{
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
+nav ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Creating Stiky Header Menu Nav Bar */
-nav.sticky{
-    background:#fff;
-    padding:20px 100px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+nav.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-nav.sticky .logo, nav.sticky ul li a{
-    color:#111;
+nav.sticky .logo,
+nav.sticky ul li a {
+  color: #111;
+}
+
+/* Designing Skills Layout */
+.services {
+    background-color: #111;
+}
+
+.services h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #009e66;
+}
+
+.heading.white p {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx {
+    color: #fff;
+    background: #161616;
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 360px;
+}
+.services .content .servicesBx:hover {
+    border-bottom: 2px solid #009e66;
 }
