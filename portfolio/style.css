@@ -191,3 +191,39 @@ nav.sticky ul li a {
 .services .content .servicesBx:hover {
     border-bottom: 2px solid #009e66;
 }
+
+/* Designing certificates layout */
+
+.certificates .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.certificates .content .certificateBx {
+    width: 360px;
+    padding: 20px; 
+}
+
+.certificates .content .certificateBx img {
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.certificates .content .certificateBx img:hover {
+    box-shadow: 0 0 20px 5px #ccc;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.certificates .content .certificateBx p {
+    text-align: center;
+}
+.certificates .content .certificateBx a:link,
+.certificates .content .certificateBx a:visited,
+.certificates .content .certificateBx a:active {
+    text-decoration: none;
+    color: #161616;
+    font-weight: 600;
+}
