@@ -449,4 +449,26 @@ footer.copyright {
     nav.sticky .toggle {
         filter: invert(1);
     }
+    section {
+        padding: 100px 30px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5rem;
+    }
+    .banner h3{
+        font-size: 1rem;
+    }
+    .textBx {
+        position: relative;
+        top: 250px;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
 }
