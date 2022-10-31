@@ -456,19 +456,75 @@ footer.copyright {
         padding: 150px 50px 100px;
     }
     .banner h2{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .banner h3{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .textBx {
         position: relative;
-        top: 250px;
+        top: 340px;
     }
     .btn {
         margin-top: 10px;
         padding: 10px 20px;
         font-size: 16px;
         border-radius: 50px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .contentBx {
+        padding: 0;
+    }
+    .content .w50 img {
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .contentBx h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .services .content .servicesBx{
+        margin:10px;
+    }
+    .contactInfo{
+        margin:10px 0;
+    }
+    .proPic {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:row;
+    }
+}
+
+@media (max-width: 600px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:column;
     }
 }
