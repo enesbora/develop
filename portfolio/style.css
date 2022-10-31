@@ -386,3 +386,42 @@ footer.copyright {
     text-align: center;
     padding: 10px;
 }
+
+/* Making the site responsive */
+@media (max-width: 991px)
+{
+    nav,
+    nav.sticky {
+        padding: 20px 50px;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu {
+        position: fixed;
+        background: #fff;
+        display: block;
+        top: 75px;
+        left: 0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: #111;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background-image: url(./images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+}
