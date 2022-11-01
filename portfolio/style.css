@@ -20,7 +20,7 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: #111;
-  background: url(./images/myPic2.png);
+  background: url(./images/design.png);
   background-size: cover;
   background-position: right center;
 }
@@ -104,6 +104,7 @@ section {
 w50 {
   min-width: 25%;
 }
+
 img {
   max-width: 100%;
 }
@@ -279,7 +280,6 @@ nav.sticky ul li a {
 
 /* Designing Contact Layout */
 
-/* Creating Contact Details Layout in CSS */
 .contact{
     background:#111;
 }
@@ -463,7 +463,7 @@ footer.copyright {
     }
     .textBx {
         position: relative;
-        top: 340px;
+        top: 280px;
     }
     .btn {
         margin-top: 10px;
