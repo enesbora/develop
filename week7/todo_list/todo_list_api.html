@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list populated with API</title>
+</head>
+<body>
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/todos")
+            .then(response => response.json())
+            .then(data => refreshList(data));
+
+        function refreshList(todos) {
+            let ul = document.createElement("ul")
+            document.body.appendChild(ul)
+
+            for (let i = 0; i < todos.length; i++) {
+                let todo = todos[i]
+                let li = document.createElement("li")
+                li.innerHTML = `<input type="checkbox" ${todo.completed ? "checked" : ""} > ${todo.title} ${todo.completed ? "COMPLETE" : "TODO"}`
+                ul.appendChild(li)
+            }
+        }
+    </script>
+</body>
+</html>
