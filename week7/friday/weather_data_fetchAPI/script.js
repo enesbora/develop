@@ -39,6 +39,11 @@ let cityCoordinates = [
         latitude: 39.6399788,
         longitude: 27.9044597,
       },
+      {
+        city: "My home",
+        latitude: 47.0574383,
+        longitude: 8.3433504,
+      },
   ];
   
   let select = document.querySelector("select");
