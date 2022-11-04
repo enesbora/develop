@@ -29,6 +29,11 @@ let cityCoordinates = [
         latitude: 47.0502,
         longitude: 8.3093,
       },
+      {
+        city: "Balikesir",
+        latitude: 39.6533,
+        longitude: 27.8903,
+      },
   ];
   
   let select = document.querySelector("select");
