@@ -48,3 +48,23 @@ let authors = [
         lastName: 'Libsig'
     }
 ];
+
+let ul = document.querySelector("main ul");
+
+authors.forEach((author) => {
+  let li = document.createElement("li");
+  let img = document.createElement("img");
+  img.setAttribute(
+    "src",
+    `img/tile_${author.firstName}_${author.lastName}.jpg`
+  );
+  let h3 = document.createElement("h3");
+  let span = document.createElement("span");
+  let text = document.createTextNode(`${author.firstName} ${author.lastName}`);
+  span.appendChild(text);
+  h3.appendChild(span);
+
+  li.appendChild(img);
+  li.appendChild(h3);
+  ul.appendChild(li);
+});
