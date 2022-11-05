@@ -44,6 +44,11 @@ let cityCoordinates = [
         latitude: 47.0574383,
         longitude: 8.3433504,
       },
+      {
+        city: "Istanbul",
+        latitude: 41.0082,
+        longitude: 28.9784,
+      },
   ];
   
   let select = document.querySelector("select");
