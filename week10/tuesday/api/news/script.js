@@ -5,14 +5,16 @@ res.then((data) => {
   let parent = document.getElementById("newsBox");
   showNewsData(data, parent);
 });
-async function get() {
-  let newSearch = document.getElementById("inputBox").value;
+async function get(value) {
+  let newSearch = value;
   let newsData = document.getElementById("newsBox");
   newsData.innerHTML = null;
 
+  
+
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=${newSearch}&apiKey=34854b57931248daa4e9966722c10c7f`
+      `https://newsapi.org/v2/everything?q=${newSearch}&sortBy=publishedAt&apiKey=34854b57931248daa4e9966722c10c7f`
     );
     let data = await res.json();
     let s = data.articles;
@@ -22,7 +24,6 @@ async function get() {
 
       let maindiv = document.createElement("div");
       maindiv.class = "nbox";
-      // a.setAttribute("href", url);
 
       let div1 = document.createElement("a");
       div1.id = "title-box";
@@ -35,14 +36,6 @@ async function get() {
       titles.innerText = title;
       titles.id = "titles";
       titles.setAttribute("href", url);
-
-      // let auth = document.createElement("h5");
-      // auth.innerText = author;
-      // auth.id = "authors";
-
-      // let pub = document.createElement("h5");
-      // pub.innerText = publishedAt;
-      // pub.id = "published";
 
       let desc = document.createElement("a");
       desc.innerHTML = description;
@@ -62,5 +55,12 @@ async function get() {
     });
   } catch (err) {
     console.log("err:", err);
+  }
+}
+
+function handleKeyPress(e){
+  var key=e.keyCode || e.which;
+  if (key === 13){ // Enter
+    get(document.getElementById('inputBox').value);
   }
 }

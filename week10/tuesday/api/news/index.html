@@ -11,10 +11,18 @@
 
   <body>
     <section id="container">
-      <h1>Find The News Here</h1>
+      <h1 class="">Don't search for news that you don't want to find</h1>
       <section id="subBox">
-        <input type="text" name="" id="inputBox" placeholder="Write key words" />
-        <button onclick="get()" id="btn">Search</button>
+        <input class="input" type="text" name="" id="inputBox" placeholder="Write key words" onkeypress="handleKeyPress(event)"/>
+        <button onclick="get(document.getElementById('inputBox').value)" id="btn">Search</button>
+        <button onClick="window.location.reload()" id="btn">Clear</button>
+        <br><br>
+        <div>
+          <button onclick="get('Apple')">Apple</button>
+          <button onclick="get('Sport')">Sport</button>
+          <button onclick="get('Finance')">Finance</button>
+          <button onclick="get('Cybersecurity')">Cybersecurity</button>
+        </div>  
       </section>
     </section>
     <section id="newsBox"></section>
