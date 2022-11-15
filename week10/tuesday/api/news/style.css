@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 1.8rem;
+    display: flex;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 500px;
+    border-radius: 7px;
+}
+
+button, #inputBox {
+    padding: 16px 10px;
+    background-color: rgb(224, 85, 150);
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(214, 163, 214) ;
+    cursor: pointer;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    font-size: larger;
+}
+
+#newsBox {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
+    background-size: contain;
+}
+
+
+
+
+
