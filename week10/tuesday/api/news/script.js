@@ -1,21 +1,22 @@
-const res = Promise.resolve('https://newsapi.org/v2/everything?q=bitcoin&apiKey=34854b57931248daa4e9966722c10c7f');
- // "https://newsapi.org/v2/everything?q=bitcoin&apiKey=34854b57931248daa4e9966722c10c7f";
+// const res = Promise.resolve('https://newsapi.org/v2/everything?q=bitcoin&apiKey=34854b57931248daa4e9966722c10c7f');
 
-res.then((data) => {
-  let parent = document.getElementById("newsBox");
-  showNewsData(data, parent);
-});
+// res.then((data) => {
+//   let parent = document.getElementById("newsBox");
+//   showNewsData(data, parent);
+// });
+
 async function get(value) {
   let newSearch = value;
   let newsData = document.getElementById("newsBox");
   newsData.innerHTML = null;
 
-  
+  var urlEverything = 'https://newsapi.org/v2/everything?' +
+          'q=' + newSearch +
+          '&sortBy=publishedAt' +
+          '&apiKey=34854b57931248daa4e9966722c10c7f';
 
   try {
-    let res = await fetch(
-      `https://newsapi.org/v2/everything?q=${newSearch}&sortBy=publishedAt&apiKey=34854b57931248daa4e9966722c10c7f`
-    );
+    let res = await fetch(urlEverything);
     let data = await res.json();
     let s = data.articles;
     s.forEach(({ title, description, urlToImage, url }) => {
