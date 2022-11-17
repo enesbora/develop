@@ -47,8 +47,8 @@ button:hover {
     justify-content: center;
     margin: 40px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
-    background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
-    background-size: contain;
+    /* background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
+    background-size: contain; */
 }
 
 
