@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>News App</title>
-  </head>
-  <body>
-    <section id="container">
-      <h1 class="">Don't search for news that you don't want to find</h1>
-      <section id="subBox">
-        <input class="input" type="text" name="" id="inputBox" placeholder="Write key words" onkeypress="handleKeyPress(event)"/>
-        <button onclick="get(document.getElementById('inputBox').value)" id="btn">Search</button>
-        <button onClick="window.location.reload()" id="btn">Clear</button>
-        <br><br>
-        <label for="sort" class="options">Sort by:</label>
-        <select name="sort" id="sort">
-          <option value="publishedAt" selected>newest</option>
-          <option value="relevancy">relevancy</option>
-          <option value="popularity">popularity</option>
-        </select>
-        <label for="language" class="options">language:</label>
-        <select name="language" id="language">
-          <option value="" selected>all</option>
-          <option value="en">English</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="it">Italian</option>
-          <option value="ar">Arabic</option>
-          <option value="ru">Russian</option>
-        </select>
-        <div>
-          <button onclick="get('Apple')" class="button">Apple</button>
-          <button onclick="get('Sport')" class="button">Sport</button>
-          <button onclick="get('Finance')" class="button">Finance</button>
-          <button onclick="get('Cybersecurity')" class="button">Cybersecurity</button>
-        </div>
-      </section>
-    </section>
-    <section id="newsBox"></section>
-    <script src="./script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>News App</title>
+    </head>
+    <body>
+        <section id="container">
+            <h1 class="">Don't search for news that you don't want to find</h1>
+            <section id="subBox">
+                <input class="input" type="text" name="" id="inputBox"
+                    placeholder="Write key words"
+                    onkeypress="handleKeyPress(event)"/>
+                <button onclick="get(document.getElementById('inputBox').value)"
+                    id="btn">Search</button>
+                <button onClick="window.location.reload()" id="btn">Clear</button>
+                <br><br>
+                <label for="sort" class="options">Sort by:</label>
+                <select name="sort" id="sort">
+                    <option value="publishedAt" selected>newest</option>
+                    <option value="relevancy">relevancy</option>
+                    <option value="popularity">popularity</option>
+                </select>
+                <div class="options">
+                    <label for="language" class="options">language:</label>
+                    <select name="language" id="language">
+                        <option value="" selected>all</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="ar">Arabic</option>
+                        <option value="ru">Russian</option>
+                    </select>
+                </div>
+                <div>
+                    <button onclick="get('Apple')" class="button">Apple</button>
+                    <button onclick="get('Sport')" class="button">Sport</button>
+                    <button onclick="get('Finance')" class="button">Finance</button>
+                    <button onclick="get('Cybersecurity')" class="button">Cybersecurity</button>
+                </div>
+            </section>
+        </section>
+        <section id="newsBox"></section>
+        <script src="./script.js"></script>
+    </body>
 </html>
