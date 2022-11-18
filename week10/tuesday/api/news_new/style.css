@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    color: wheat;
+    line-height: 1.8rem;
+    display: flex;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 60%;
+    border-radius: 7px;
+}
+
+#img-box {
+    margin: 40px;
+    text-align: center;
+}
+
+button, #inputBox {
+    padding: 16px 10px;
+    background-color: rgb(224, 85, 150);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(214, 163, 214) ;
+    cursor: pointer;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    font-size: larger;
+}
+
+#newsBox {
+    max-width: 80%;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2022/09/WebsiteHero_1400x788_D.jpg);
+
+}
+ .button {
+    background-color: aqua;
+    letter-spacing: 2px;
+ }
+
+ .button:hover {
+    background-color: rgb(5, 158, 246);
+ }
+
+
+
+
