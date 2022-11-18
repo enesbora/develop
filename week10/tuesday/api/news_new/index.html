@@ -9,7 +9,7 @@
     </head>
     <body>
         <section id="container">
-            <h1 class="">Don't search for news that you don't want to find</h1>
+            <h1>Stay informed!</h1>
             <section id="subBox">
                 <input class="input" type="text" name="" id="inputBox"
                     placeholder="Write key words"
@@ -18,15 +18,16 @@
                     id="btn">Search</button>
                 <button onClick="window.location.reload()" id="btn">Clear</button>
                 <br><br>
+                <div class="options">
                 <label for="sort" class="options">Sort by:</label>
-                <select name="sort" id="sort">
+                <select name="sort" class="options" id="sort">
                     <option value="publishedAt" selected>newest</option>
                     <option value="relevancy">relevancy</option>
                     <option value="popularity">popularity</option>
                 </select>
-                <div class="options">
-                    <label for="language" class="options">language:</label>
-                    <select name="language" id="language">
+                
+                    <label for="language" class="options">Language:</label>
+                    <select name="language"  class="options" id="language">
                         <option value="" selected>all</option>
                         <option value="en">English</option>
                         <option value="fr">French</option>
@@ -36,11 +37,12 @@
                         <option value="ru">Russian</option>
                     </select>
                 </div>
-                <div>
+                <div class="predefined">
                     <button onclick="get('Apple')" class="button">Apple</button>
                     <button onclick="get('Sport')" class="button">Sport</button>
                     <button onclick="get('Finance')" class="button">Finance</button>
                     <button onclick="get('Cybersecurity')" class="button">Cybersecurity</button>
+                    <button onclick="get('DevOps')" class="button">DevOps</button>
                 </div>
             </section>
         </section>
