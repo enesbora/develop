@@ -59,4 +59,4 @@ async function get(value) {
     if (key === 13){ // Enter
       get(document.getElementById('inputBox').value);
     }
-  }
+  } 
